@@ -18,10 +18,15 @@ public class SearchPage extends PageBase{
 	WebElement searchclick;
 	
 	public void srch (String text) {
+		searchfield.clear();
 		searchfield.sendKeys(text);
 		searchclick.click();
 		
 	}	
+	public void clearsearch() {
+		searchfield.clear();
+		
+	}
 	
 }
 

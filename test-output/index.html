@@ -147,11 +147,11 @@
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.0.1&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.139, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /var/folders/1s/wpsdbm7n643...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55922}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55922/devtoo..., se:cdpVersion: 121.0.6167.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 82343e33135bd55a0feb4588ac4e7e1e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.139, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /var/folders/1s/wpsdbm7n643...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64405}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64405/devtoo..., se:cdpVersion: 121.0.6167.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 49214279695066c18d12fc6526ce682e
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at tests.SearchTest.checkresult(SearchTest.java:35)
+	at tests.SearchTest.checkresult(SearchTest.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -204,7 +204,7 @@ Session ID: 82343e33135bd55a0feb4588ac4e7e1e
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/1s/wpsdbm7n6431qxhhdbr2_2c40000gp/T/testng-eclipse--314648323/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/1s/wpsdbm7n6431qxhhdbr2_2c40000gp/T/testng-eclipse--1675030207/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -255,18 +255,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkresult')
+data.setCell(0, 1, 'usersearch')
 data.setCell(0, 2, 'tests.SearchTest')
-data.setCell(0, 3, 30547);
+data.setCell(0, 3, 40484);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'usersearch')
+data.setCell(1, 1, 'checkresult')
 data.setCell(1, 2, 'tests.SearchTest')
-data.setCell(1, 3, 26018);
+data.setCell(1, 3, 30994);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 56 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -301,12 +301,16 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkresult</span>
-                <span class="method-start">22965 ms</span>
+                <span class="method-start">37746 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">usersearch</span>
-                <span class="method-start">53544 ms</span>
+                <span class="method-start">68774 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">109756 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

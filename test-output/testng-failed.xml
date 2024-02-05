@@ -5,6 +5,7 @@
     <classes>
       <class name="tests.SearchTest">
         <methods>
+          <include name="closebrowser"/>
           <include name="checkresult"/>
           <include name="startdriver"/>
         </methods>

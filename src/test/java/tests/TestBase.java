@@ -2,6 +2,7 @@ package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 
@@ -15,5 +16,9 @@ public class TestBase {
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
 	}
+	@AfterSuite
+	public void closebrowser() {
+		driver.close();
 		
+	}
 }

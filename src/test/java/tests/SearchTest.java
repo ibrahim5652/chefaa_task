@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
@@ -34,8 +35,16 @@ public class SearchTest extends TestBase {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.titleContains("internaional"));
 	
-		//Assert.assertTrue(resultobject.firstoption.getText().contains("International Software Testing Qualifications Board"));
+		Assert.assertTrue(resultobject.firstoption.getText().contains("International Software Testing Qualifications Board"));
 		resultobject.clickresult();
+	}
+	@Test
+	public void clearsearch() {
+		searchobject = new SearchPage(driver);
+		searchobject.clearsearch();
+	
+		
+		
 	}
 
 }
