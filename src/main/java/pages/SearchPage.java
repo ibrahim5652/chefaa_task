@@ -13,15 +13,16 @@ public class SearchPage extends PageBase{
 
 	
 	@FindBy(name = "q")
-	WebElement searchfieldElement;
+	WebElement searchfield;
 	@FindBy(name = "btnK")
-	WebElement searchclickElement;
+	WebElement searchclick;
 	
-	public void srch() {
-		searchfieldElement.sendKeys("istqb");
-		searchclickElement.click();
+	public void srch (String text) {
+		searchfield.sendKeys(text);
+		searchclick.click();
 		
-	}
+	}	
 	
 }
+
 
